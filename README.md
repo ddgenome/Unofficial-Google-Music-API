@@ -1,6 +1,6 @@
 #gmusicapi: an unofficial Python API for Google Play Music
 
-The project is not supported nor endorsed by Google. 
+This project allows control of [Google Music](http://music.google.com) from Python. It is not supported nor endorsed by Google.
 
 **Respect Google in your use of the API**. Use common sense (protocol compliance, reasonable load, etc) and don't ruin the fun for everyone else.
 
@@ -12,11 +12,9 @@ For bugs reports, feature requests, and contributions, go ahead and [open an iss
 
 ##Features
 
-**New in version 2012.05.04** 
+**New in version 2012.08.31** 
 
 * various fixes and compatibility updates
-   
-There were also numerous breaking changes needed to improve the Api interface. See the changelog and documentation for details.
 
 **Feature Overview:**
 
@@ -42,8 +40,7 @@ There were also numerous breaking changes needed to improve the Api interface. S
 
 **What's on the way:**
 
-* integration with the Android service api, thanks to [Darryl Pogue](https://github.com/dpogue/Unofficial-Google-Music-API)
-* more user-friendly abstractions
+* album art manipulation
 
 ##Usage
 
@@ -51,9 +48,11 @@ The API has been tested on Python 2.7.2 on Linux and Windows.
 
 ###Installation
 
-Linux users: use `pip install gmusicapi` to get the most recent version and dependencies.
+If you're not comfortable installing from source:
 
-Windows users: there is an [installation binary on PyPI](http://pypi.python.org/pypi/gmusicapi/).
+* Linux users: use `pip install gmusicapi` to get the most recent version and dependencies.
+
+* Windows users: there is an [installation binary on PyPI](http://pypi.python.org/pypi/gmusicapi/).
 
 To upload filetypes other than mp3, you're going to need FFmpeg installed and in your system path. For Ubuntu users: `sudo apt-get install ffmpeg ubuntu-restricted-extras`. Windows users, get [the most recent static binaries](http://ffmpeg.zeranoe.com/builds/) and then [edit your path](http://www.computerhope.com/issues/ch000549.htm) to include the directory that contains ffmpeg.exe.
 
@@ -70,7 +69,7 @@ In addition, Michal Odnous has built [an example](https://github.com/odiroot/Uno
 Here are the ports I'm currently aware of:
 
 * C#: [Taylor Finnell](https://github.com/Byteopia/GoogleMusicAPI.NET)
-* Java: [Jens Villadsen](https://github.com/jkiddo/gmusic.api)
+* Java: [Jens Villadsen](https://github.com/jkiddo/gmusic.api) and [Nick Martin](https://github.com/xnickmx/google-play-client)
 * PHP: [raydanhk](http://code.google.com/p/unofficial-google-music-api-php/)
 
 ###Porting Information for Developers

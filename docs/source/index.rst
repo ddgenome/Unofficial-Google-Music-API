@@ -79,9 +79,10 @@ These dictionaries have up to 30 keys. Here is an example::
      'artistNorm': 'the cat empire',
      'subjectToCuration': False,
      'matchedId': '',
-     (optional entry; exists if there is album art)
+
+     #optional entries:
      'albumArtUrl': '//lh6.googleusercontent.com/<long identifier>',
-     'storeID': Google Play Store identifier (optional)
+     'storeID': '<27 char base64 string>'
      }
 
 
